@@ -48,8 +48,7 @@ int main()
     cout << "\nPrivate name: " << variable.get_name() << "\n";
     cout << "\nPrivate number: " << variable.get_number() << "\n";
 
-    variable.display_1();
-    variable.display_2();
+    names myobj;
 
     return 0;
 }
