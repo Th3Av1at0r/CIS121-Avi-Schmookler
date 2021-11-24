@@ -1,7 +1,7 @@
 /*
 
 Output Commands
-
+Avi Schmookler
 11/17/2021
 
 */
@@ -25,7 +25,7 @@ using namespace std;
 int main()
 {
     system("color 0a");
-    cout << "\t\n\tDate: 11/17/2021" << endl;
+    cout << "\tAvi Schmookler\n\tDate: 11/17/2021" << endl;
     cout << setw(19) << "Lab#: N/A\n\t";
     cout << "\"Project_47-UML_Fruit\"\n\tObjectives: Create both the .h and .cpp for the UML Diagram Display default values, modify themand then re - display\n\n";
 
