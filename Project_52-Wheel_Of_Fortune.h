@@ -47,6 +47,7 @@ static char board_10_reset[26] = { '_','_','_','\'','_','_',' ','_','_','_','_',
 static int board_length;
 static int counter;
 static char guessed_char[26] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+static char guessed_char_reset[26] = { 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z' };
 
 
 class wof
@@ -685,6 +686,15 @@ public:
             file_wof << "\n\n";
         }
         file_wof.close();
+    }
+
+    void reset_guessed_char()
+    {
+        for (int i = 0; i < 26; i++)
+        {
+            guessed_char[i] = guessed_char_reset[i];
+        }
+
     }
 
     void set_alt()
