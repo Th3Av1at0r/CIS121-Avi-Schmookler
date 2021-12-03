@@ -105,6 +105,7 @@ int main()
             do
             {
                 wof.who_won();
+                wof.reset_guessed_char();
                 cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 cout << "\t\t\tWELCOME TO WHEEL OF FORTUNE\n";
                 cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
@@ -123,6 +124,7 @@ int main()
                 cout << "\nDo You Want to Play Again? (Y / N): ";
                 wof.calculate_board_reset();
                 wof.set_alt();
+                wof.reset_guessed_char();
                 cin >> ch;
                 system("cls");
             } while (ch != 'n' && ch != 'N');
